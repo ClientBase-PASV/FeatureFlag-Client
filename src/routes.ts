@@ -27,6 +27,17 @@ export default [
           { path: '/base', component: '@/pages/base/dashboard/BaseDashboard' },
           { path: '/base/:baseId', component: '@/pages/base/view/BaseView' },
 
+          { path: '/client', component: '@/pages/client/dashboard/ClientDashboard' },
+          { path: '/client/:clientId', component: '@/pages/client/view/ClientView' },
+
+          { path: '/order', component: '@/pages/order/dashboard/OrderDashboard' },
+          { path: '/order/:orderId', component: '@/pages/order/view/OrderView' },
+
+          { path: '/vendor', component: '@/pages/vendor/dashboard/VendorDashboard' },
+          { path: '/vendor/:vendorId', component: '@/pages/vendor/view/VendorView' },
+
+          { path: '/service', component: '@/pages/service/dashboard/ServiceDashboard' },
+          { path: '/service/:serviceId', component: '@/pages/service/view/ServiceView' },
 
           // *****  ====================================
           { path: '/users', component: '@/pages/user/userSearch/UsersDashboard' },
