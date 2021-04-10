@@ -14,12 +14,8 @@ const TopMenu = (props: IProps) => {
 
   const mainMenu = [
     { path: '/base', name: 'Base', perm: 'base.get.own' },
-    { path: '/client', name: 'Clients', perm: 'client.get.own' },
-    { path: '/order', name: 'Orders', perm: 'order.get.own' },
-    { path: '/vendor', name: 'Vendors', perm: 'vendor.get.own' },
-    { path: '/service', name: 'Services', perm: 'service.get.own' },
-  ]
-    .map((el) => ({
+    { path: '/group', name: 'Group', perm: 'group.get.own' },
+  ].map((el) => ({
     ...el,
     isActive: location.startsWith(el.path),
     isVisible: acl.includes(el.perm),

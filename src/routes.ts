@@ -27,26 +27,11 @@ export default [
           { path: '/base', component: '@/pages/base/dashboard/BaseDashboard' },
           { path: '/base/:baseId', component: '@/pages/base/view/BaseView' },
 
-          { path: '/client', component: '@/pages/client/dashboard/ClientDashboard' },
-          { path: '/client/:clientId', component: '@/pages/client/view/ClientView' },
-
-          { path: '/order', component: '@/pages/order/dashboard/OrderDashboard' },
-          { path: '/order/:orderId', component: '@/pages/order/view/OrderView' },
-
-          { path: '/vendor', component: '@/pages/vendor/dashboard/VendorDashboard' },
-          { path: '/vendor/:vendorId', component: '@/pages/vendor/view/VendorView' },
-
-          { path: '/service', component: '@/pages/service/dashboard/ServiceDashboard' },
-          { path: '/service/:serviceId', component: '@/pages/service/view/ServiceView' },
+          { path: '/group', component: '@/pages/group/dashboard/GroupDashboard' },
+          { path: '/group/:groupId', component: '@/pages/group/view/GroupView' },
 
           // *****  ====================================
           { path: '/users', component: '@/pages/user/userSearch/UsersDashboard' },
-          { path: '/contact', component: '@/pages/pages/ContactPage' },
-          { path: '/pricing', component: '@/pages/pages/PricingPage' },
-          { path: '/industries', component: '@/pages/pages/IndustriesPage' },
-          { path: '/support', component: '@/pages/pages/supportPage/Support' },
-          { path: '/faq', component: '@/pages/pages/Faq' },
-          { path: '/subscribe', component: '@/pages/pages/Subscribe' },
           {
             path: '/settings/:userId',
             component: '@/layout/UserSettingsLayout',

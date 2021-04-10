@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
 import { Button, Form, Input } from 'antd';
 import { debounce } from 'lodash';
-import { IBaseQueryParams } from '@/pages/base/types';
+import { IGroupQueryParams } from '@/pages/group/types';
 import { get } from 'lodash';
 
 interface IProps {
-  onChange: (values: null | IBaseQueryParams) => void;
-  filters: IBaseQueryParams;
+  onChange: (values: null | IGroupQueryParams) => void;
+  filters: IGroupQueryParams;
 }
 
-const BaseFilterForm = (props: IProps) => {
+const GroupFilterForm = (props: IProps) => {
   const { onChange, filters } = props;
   const [form] = Form.useForm();
   const formValues = form.getFieldsValue();
@@ -42,8 +42,8 @@ const BaseFilterForm = (props: IProps) => {
         <Input placeholder="name" />
       </Form.Item>
 
-      <Form.Item name="baseSearchParam2">
-        <Input placeholder="baseSearchParam2" />
+      <Form.Item name="groupSearchParam2">
+        <Input placeholder="groupSearchParam2" />
       </Form.Item>
 
       <Form.Item>
@@ -53,4 +53,4 @@ const BaseFilterForm = (props: IProps) => {
   );
 };
 
-export default BaseFilterForm;
+export default GroupFilterForm;
